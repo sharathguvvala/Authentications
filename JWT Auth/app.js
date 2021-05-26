@@ -30,7 +30,7 @@ app.get('/posts', requireAuth, (req,res)=>{
 app.use(authRoutes)
 
 //database connection
-mongoose.connect('mongodb+srv://authjwt:authjwt@cluster0.eig5e.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+mongoose.connect('mongodb', {
     useNewUrlParser:true,
     useUnifiedTopology:true,
     useCreateIndex:true
